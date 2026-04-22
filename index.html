@@ -1,40 +1,55 @@
 <style>
   body {
     background-color: #0000FF; /* Blu puro */
-    color: white; /* Testo bianco */
+    color: white; 
     font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    padding: 20px;
+    margin: 0;
+    height: 100vh; /* Prende tutta l'altezza dello schermo */
+    display: flex;
+    align-items: center; /* Centra in verticale */
+    justify-content: center; /* Centra in orizzontale */
+    overflow: hidden;
   }
 
   .ai-msg {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    padding: 20px;
-    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 50px rgba(0, 210, 255, 0.5);
+    padding: 40px;
+    border-radius: 30px;
+    width: 80%; /* Lo rende più largo */
+    max-width: 600px; /* Ma non troppo largo sui computer */
+    text-align: center;
   }
 
   h1 {
+    font-size: 1.8rem; /* Scritte più grandi */
     color: #fff;
-    text-shadow: 0 0 10px #00d2ff, 0 0 20px #00d2ff, 0 0 40px #00d2ff;
+    text-shadow: 0 0 15px #00d2ff, 0 0 30px #00d2ff;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin: 15px 0;
   }
 
   a {
     color: #00d2ff;
     text-decoration: none;
     font-weight: bold;
+    word-break: break-all; /* Evita che il link esca dal riquadro */
   }
 </style>
 
 <div class="ai-msg">
-  <h1>How to Download Nexos browser</h1>
-  <h1>Install native alpha</h1>
-  <h1>Paste this link:</h1>
+  <h1>Nexos Browser</h1>
+  <p><strong>Install Native Alpha</strong></p>
+  <p>Paste this link:</p>
   <p><a href="https://codepen.io/Bear-Phellino/full/gbwzZmG">https://codepen.io/Bear-Phellino/full/gbwzZmG</a></p>
-  <h1>Thanks for using this site</h1>
-  <p>Made with CodePen</p>
-  <p>⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡</p>
-  <p>Nexos by Bear_Phellino</p>
+  <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.2); margin: 20px 0;">
+  <p>Thanks for using this site</p>
+  <p>⚡⚡⚡⚡⚡⚡⚡⚡</p>
+  <p style="font-size: 0.9rem; opacity: 0.8;">Made with CodePen | Nexos by Bear_Phellino</p>
 </div>
